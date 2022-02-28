@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c52efee9-913c-4d9a-a301-12b2748788d5/resourceGroups/happy-bank/providers/Microsoft.Web/sites/happy-bank",
+    "appService.deploySubpath": "."
+}

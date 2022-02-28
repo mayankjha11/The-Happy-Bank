@@ -1,0 +1,76 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.wrapper .dynamic-txts{
+  margin: 80px;
+  padding: 80px;
+  height: 50px;
+  line-height: 80px;
+  overflow: hidden;
+  text-align: center;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: black;
+  font-size: 44px;
+  font-weight: 500;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+  text-align: center;
+
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 80px;
+  text-align: center;
+
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  height: 141%;
+  width: 120%;
+  background: white;
+  border-left: 2px solid black;
+  animation: typing 6s steps(10) infinite;
+  text-align: center;
+
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 5px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer {
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  .wrapper
+  ul.dynamic-txts
+    li
+      span=title 
+
+  //- h1=title 
+  table.table.table-hover.table-striped
+      tr.table-dark
+        th S. No 
+        th Sender 
+        th Receiver 
+        th Amount 
+        th Transaction Time 
+      - var count = 1
+      each history in history_list 
+        tr
+          td= count++
+          td= history.sender 
+          td= history.receiver  
+          td= history.amount 
+          td= history.time 

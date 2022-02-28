@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .wrapper
+  ul.dynamic-txts
+    li
+      span=title
+
+  table.table.table-hover.table-striped
+      tr.table-dark
+        th S. No
+        th Name
+        th Email
+        th Balance
+        th View Customer
+      - var count = 1
+      each customer in customer_list 
+        tr
+          td= count++
+          td= customer.name
+          td= customer.email 
+          td= customer.balance
+          td
+            a(href=customer.url) View and Transfer  
+
