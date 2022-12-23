@@ -7,5 +7,3 @@ Stack Used:-
 
 Front-End: HTML, CSS, BootStrap, JavaScript</br>
 Backend: NodeJS, ExpressJS, MongoDB</br>
-Deployed On: Microsoft Azure</br>
-Deployed Website Link: https://happy-bank.azurewebsites.net/home
